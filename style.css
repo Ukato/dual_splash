@@ -32,7 +32,7 @@ main {
 
   background-color: #7a7a7a;
   background-image: url(./img/professional_splash.png);
-  background-position: right center;
+  background-position: right bottom;
   background-size: cover;
   background-repeat: no-repeat;
   /* background-origin: border-box;
@@ -41,6 +41,7 @@ main {
 
   /* shape-outside: polygon(0% 0, 100% 0, 100% 100%, 25% 100%); */
   clip-path: polygon(75% 0%, 100% 0%, 100% 100%, 25% 100%);
+  transition: height 0.5s, clip-path 1s;
 }
 
 #personal-splash {
@@ -53,7 +54,7 @@ main {
 
   background-color: #e67e22;
   background-image: url(./img/personal_splash.png);
-  background-position: -150px top;
+  background-position: left top;
   background-size: cover;
   background-repeat: no-repeat;
   /* background-origin: border-box;
@@ -61,4 +62,26 @@ main {
   background-attachment: fixed; */
 
   clip-path: polygon(0% 0%, 75% 0%, 25% 100%, 0% 100%);
+  transition: height 0.5s, clip-path 1s;
+}
+
+@media screen and (max-width: 1800px) {
+  #professional-splash {
+    height: 50vh;
+
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%);
+  }
+  #personal-splash {
+    height: 50vh;
+    clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #professional-splash {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 100%);
+  }
+  #personal-splash {
+    clip-path: polygon(0% 25%, 50% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
 }
