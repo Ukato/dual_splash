@@ -1,0 +1,64 @@
+/*
+File Header
+*/
+
+/* CSS Global Level Styles and Variables */
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/* CSS Element Level Styles */
+main {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+}
+
+/* CSS Class Level Styles */
+
+
+/* CSS ID Level Styles */
+#professional-splash {
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: #7a7a7a;
+  background-image: url(./img/professional_splash.png);
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-origin: border-box;
+  background-clip: border-box;
+  background-attachment: fixed; */
+
+  /* shape-outside: polygon(0% 0, 100% 0, 100% 100%, 25% 100%); */
+  clip-path: polygon(75% 0%, 100% 0%, 100% 100%, 25% 100%);
+}
+
+#personal-splash {
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  background-color: #e67e22;
+  background-image: url(./img/personal_splash.png);
+  background-position: -150px top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-origin: border-box;
+  background-clip: border-box;
+  background-attachment: fixed; */
+
+  clip-path: polygon(0% 0%, 75% 0%, 25% 100%, 0% 100%);
+}
