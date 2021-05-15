@@ -16,10 +16,33 @@ main {
   height: 100vh;
 
   display: flex;
+
+  background-color: #888888;
 }
 
 /* CSS Class Level Styles */
+.open-splash {
+  margin: 1rem 2rem;
+  padding: 0.5rem 1rem;
 
+  background-color: #c7c7c7;
+
+  font-size: 1.54rem;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 0.25rem;
+
+  cursor: pointer;
+
+  transition: background-color 0.5s, transform 0.5s;
+}
+
+.open-splash:hover {
+  background-color: #ececec;
+
+  transform: scale(1.1);
+}
 
 /* CSS ID Level Styles */
 #professional-splash {
@@ -39,9 +62,15 @@ main {
   background-clip: border-box;
   background-attachment: fixed; */
 
-  /* shape-outside: polygon(0% 0, 100% 0, 100% 100%, 25% 100%); */
   clip-path: polygon(75% 0%, 100% 0%, 100% 100%, 25% 100%);
+  /* shape-outside: polygon(75% 0%, 100% 0%, 100% 100%, 25% 100%); */
   transition: height 0.5s, clip-path 1s;
+}
+
+#open-pro {
+  position: absolute;
+  bottom: 2.5rem;
+  left: calc(50% - 4rem);
 }
 
 #personal-splash {
@@ -65,6 +94,12 @@ main {
   transition: height 0.5s, clip-path 1s;
 }
 
+#open-per {
+  position: absolute;
+  top: 2.5rem;
+  right: calc(50% - 4rem);
+}
+
 @media screen and (max-width: 1800px) {
   #professional-splash {
     height: 50vh;
@@ -77,7 +112,7 @@ main {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 770px) {
   #professional-splash {
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 100%);
   }
