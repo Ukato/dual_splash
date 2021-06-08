@@ -54,7 +54,7 @@ main {
   left: 0;
 
   background-color: #7a7a7a;
-  background-image: url(./img/professional_splash.png);
+  background-image: url(./img/professional-splash.png);
   background-position: right bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -82,7 +82,7 @@ main {
   right: 0;
 
   background-color: #e67e22;
-  background-image: url(./img/personal_splash.png);
+  background-image: url(./img/personal-splash.png);
   background-position: left top;
   background-size: cover;
   background-repeat: no-repeat;
